@@ -21,12 +21,15 @@ Personal portfolio site for Mümin Kadir Varıcı — Software Architect.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Portfolio site (single file, no dependencies) |
+| `index.html` | Portfolio site – English (default, `x-default`) |
+| `tr/index.html` | Portfolio site – Turkish |
+| `assets/css/site.css`, `assets/js/site.js` | Shared styles and scripts used by both language pages |
 | `cv.md` | ATS-compatible CV in Markdown (excluded from the published site) |
 | `robots.txt` / `sitemap.xml` | Crawler rules and sitemap for search engines |
 | `favicon.svg` / `apple-touch-icon.png` | Site icons |
 | `og-image.png` | 1200×630 social share preview (LinkedIn, X, WhatsApp…) |
 | `404.html` | Custom not-found page (`noindex`) |
+| `googleff89007e00027af1.html` | Google Search Console ownership verification – do not delete |
 | `_config.yml` | GitHub Pages build config (excludes repo docs from the site) |
 
 ## SEO & Google Search Console
@@ -34,14 +37,15 @@ Personal portfolio site for Mümin Kadir Varıcı — Software Architect.
 The page ships with a canonical URL, Open Graph / Twitter meta tags and
 `schema.org` JSON-LD (`WebSite` + `ProfilePage` + `Person`).
 
-To register the site in Google Search Console:
+Both language pages link to each other with `hreflang` (also declared in `sitemap.xml`).
+Page-specific text – including the typewriter phrases (`data-phrases`) – lives in each HTML file;
+layout and behaviour live in `assets/`. When you change content, update **both** pages.
 
-1. Open https://search.google.com/search-console → **Add property** → **URL prefix** →
-   `https://muminvarici.github.io/` (a *Domain* property is not possible on `github.io`).
-2. Choose **HTML tag** verification, copy the `content` value, and paste it into the
-   commented-out `google-site-verification` meta tag in `index.html`. Push and wait for Pages to deploy.
-3. Click **Verify**.
-4. **Sitemaps** → submit `sitemap.xml`.
-5. **URL inspection** → `https://muminvarici.github.io/` → **Request indexing**.
+Google Search Console (URL-prefix property `https://muminvarici.github.io/`) is verified
+with the HTML file method (`googleff89007e00027af1.html`). After deploy:
+
+1. Search Console → **Verify**.
+2. **Sitemaps** → submit `sitemap.xml`.
+3. **URL inspection** → request indexing for `/` and `/tr/`.
 
 When content changes, update `<lastmod>` in `sitemap.xml`.
