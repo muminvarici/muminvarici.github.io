@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) build settings.
+# Keep repo docs out of the published site so they are not indexed as thin/duplicate pages.
+exclude:
+  - README.md
+  - cv.md

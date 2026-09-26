@@ -1,7 +1,7 @@
 # Mümin Kadir Varıcı
-**Software Architect** · Istanbul, Turkey
+**Software Architect** · Istanbul & Bursa, Turkey
 
-mumin.varici@outlook.com · [linkedin.com/in/mumin-kadir-varici](https://linkedin.com/in/mumin-kadir-varici) · [github.com/muminvarici](https://github.com/muminvarici)
+mumin.varici@outlook.com · [linkedin.com/in/mumin-ka](https://www.linkedin.com/in/mumin-ka/) · [github.com/muminvarici](https://github.com/muminvarici)
 
 ---
 
@@ -62,7 +62,7 @@ Software Architect with 10+ years of experience designing and delivering scalabl
 
 ---
 
-### Senior Software Development Engineer → Software Development Specialist
+### Software Development Specialist → Senior Software Development Engineer
 **TAB Gıda Sanayi ve Ticaret A.Ş. (Burger King TR)** · Istanbul, Turkey · *Aug 2017 – Feb 2021 (3y 7m)*
 
 - Led development of internal business applications and digital transformation projects across retail and supply chain domains
